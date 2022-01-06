@@ -7,15 +7,15 @@ public class calculadora {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
 
-        int a, b;
+        float a, b;
         System.out.println("Digite o primeiro valor: ");
-        a = scan.nextInt();
+        a = scan.nextFloat();
         System.out.println("Digite o segundo valor: ");
-        b = scan.nextInt();
+        b = scan.nextFloat();
 
-        int somar = somar(a, b);
-        int subtrair = subtrair(a, b);
-        int multiplicar = multiplicar(a, b);
+        float somar = somar(a, b);
+        float subtrair = subtrair(a, b);
+        double multiplicar = multiplicar(a, b);
         float dividir = dividir(a, b);
 
 
@@ -23,20 +23,20 @@ public class calculadora {
         System.out.println("subt: " + subtrair);
         System.out.println("mult: " + multiplicar);
         System.out.println("div: " + dividir);
-
+        //System.out.println("somar a + b: " + somar);
 
     }
 
-    public static int somar(int a, int b) {
+    public static float somar(float a, float b) {
         return  a + b;
     }
-    public static int subtrair(int a, int b) {
+    public static float subtrair(float a, float b) {
         return a - b;
     }
-    public static int multiplicar(int a, int b) {
+    public static float multiplicar(float a, float b) {
         return a * b;
     }
-    public static int dividir(int a, int b) {
+    public static float dividir(float a, float b) {
         return a / b;
     }
 }
